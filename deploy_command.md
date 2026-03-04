@@ -2,4 +2,6 @@
 
 ```bash
 # 方法A: ソースから直接デプロイ（env.yaml使用）
-gcloud run deploy aga-line --source .  --region=asia-northeast1  --platform=managed  --allow-unauthenticated   --env-vars-file env.yaml
+gcloud config set project line-inquiry-473106
+
+gcloud run deploy bookdam-line --source .  --region=asia-northeast1  --platform=managed  --allow-unauthenticated   --env-vars-file env.yaml
